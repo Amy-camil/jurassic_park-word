@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mapa de las Islas - Jurassic Project</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+    body {
+        margin: 0;
+        background: url('ChatGPT Image 5 dic 2025, 11_42_49 a.m. copy.png');
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    /* MENÚ */
+    .menu {
+        background: linear-gradient(90deg, #0b0b0b, #2a2a2a);
+        padding: 15px;
+        border-bottom: 4px solid #b30000;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+        position: relative;
+        z-index: 10;
+    }
+
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .menu ul li {
+        position: relative;
+    }
+
+    .menu a {
+        color: #f1f1f1;
+        text-decoration: none;
+        font-size: 22px;
+        text-shadow: 2px 2px 3px black;
+        transition: 0.3s;
+    }
+
+    .menu a:hover {
+        color: #ff0000;
+        transform: scale(1.1);
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        background: rgba(30, 30, 30, 0.95);
+        padding: 10px;
+        border-radius: 8px;
+        top: 35px;
+        min-width: 170px;
+        border: 2px solid #a90000;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.8);
+    }
+
+    .submenu a {
+        color: #e1e1e1;
+        display: block;
+        padding: 6px 0;
+        font-size: 18px;
+    }
+
+    .submenu a:hover {
+        color: #ff3b3b;
+        letter-spacing: 1px;
+    }
+
+    .menu ul li:hover .submenu {
+        display: block;
+    }
+
+    /* TÍTULO */
+    .titulo {
+        text-align: center;
+        padding: 25px;
+        font-size: 50px;
+        color: #ff0000;
+        text-shadow: 4px 4px 6px black;
+        background: rgba(0,0,0,0.7);
+        border-bottom: 4px solid #b30000;
+    }
+
+    /* CONTENEDOR DE ISLAS */
+    .contenedor {
+        margin: 40px auto;
+        width: 85%;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .isla {
+        background: rgba(15, 15, 15, 0.85);
+        border: 3px solid #b30000;
+        border-radius: 15px;
+        width: 420px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 20px black;
+        transition: 0.3s;
+        position: relative;
+        overflow: visible;
+    }
+
+    .isla:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 30px #ff0000;
+    }
+
+    .isla h2 {
+        text-align: center;
+        font-size: 32px;
+        color: #ff4c4c;
+        text-shadow: 3px 3px 5px black;
+        padding: 15px 0;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 300px;
+        background-color: black;
+        background-size: cover;
+        background-position: center;
+        border-top: 2px solid #ff0000;
+        border-bottom: 2px solid #ff0000;
+        cursor: zoom-in;
+        transition: 0.4s ease;
+    }
+
+    /* ZOOM REAL COMPLETO */
+    .mapa:hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 400px;             /* tamaño real grande */
+        height: 400px;
+        transform: translate(-20%, -20%);
+        z-index: 9999;
+        border: 4px solid yellow;
+        box-shadow: 0 0 40px red;
+        cursor: zoom-out;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .texto {
+        padding: 18px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.3;
+        z-index: 1;
+        position: relative;
+    }
+
+    /* BOTÓN VOLVER */
+    .volver {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .volver a {
+        background: #b30000;
+        padding: 12px 25px;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        transition: 0.3s;
+        box-shadow: 0 0 12px black;
+    }
+
+    .volver a:hover {
+        background: #ff1a1a;
+        box-shadow: 0 0 20px #ff0000;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- MENÚ -->
+<div class="menu">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+
+        <li><a href="#">Parque</a>
+            <div class="submenu">
+                <a href="mapa.html">Mapa de Islas</a>
+                <a href="dino.html">Dinosaurios</a>
+                <a href="atracciones.html">Atracciones</a>
+            </div>
+        </li>
+
+        <li><a href="#">Laboratorio</a>
+            <div class="submenu">
+                <a href="ADN.html">ADN</a>
+                <a href="inv.html">Investigaciones</a>
+            </div>
+        </li>
+
+        <li><a href="#">Aventuras</a>
+            <div class="submenu">
+                <a href="tours.html">Tours</a>
+                <a href="Vehiculos.html">Vehículos</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- TÍTULO -->
+<div class="titulo">🦖 Mapa de las Islas · Jurassic Project 🗺️</div>
+
+<!-- CONTENEDOR -->
+<div class="contenedor">
+
+    <div class="isla">
+        <h2>Isla Nublar</h2>
+        <div class="mapa" style="background-image: url('https://i.pinimg.com/1200x/91/d1/29/91d129ee19dd1bba938fbd485ccae0c8.jpg');"></div>
+        <div class="texto">Isla donde se construyó Jurassic Park y luego Jurassic World.  
+            Famosa por el Centro de Visitantes, el Parque Principal y las atracciones modernas.
+</div>
+    </div>
+
+    <div class="isla">
+        <h2>Isla Sorna</h2>
+        <div class="mapa" style="background-image: url('https://i.pinimg.com/1200x/4c/ce/64/4cce641417884445d088824457eeb07c.jpg');"></div>
+        <div class="texto">Conocida como Site B, lugar original de crianza y creación de dinosaurios.  
+            Más salvaje, sin visitantes y llena de zonas prohibidas.
+</div>
+    </div>
+
+</div>
+
+<!-- BOTÓN VOLVER -->
+<div class="volver">
+    <a href="index.html">⟵ Volver al Inicio</a>
+</div>
+
+</body>
+</html>

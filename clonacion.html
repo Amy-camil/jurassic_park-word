@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clonación y Mutación – Jurassic Park & World</title>
+
+    <style>
+        body {
+            background-image: url("fondo_laboratorio.jpg");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            backdrop-filter: blur(2px);
+        }
+
+        /* MENÚ */
+        nav {
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background: rgba(0,0,0,0.9);
+            top: 40px;
+            left: 0;
+            padding: 0;
+            border-radius: 5px;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul ul li {
+            width: 170px;
+        }
+
+        /* CONTENIDO */
+        .container {
+            max-width: 900px;
+            background: rgba(0,0,0,0.65);
+            margin: 40px auto;
+            padding: 25px 35px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            text-shadow: 0px 0px 10px black;
+        }
+
+        h2 {
+            color: #7ad4ff;
+            margin-top: 25px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-shadow: 0 0 4px black;
+        }
+
+        .lab-img {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            transition: transform 0.4s ease;
+        }
+
+        .lab-img:hover {
+            transform: scale(1.25);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ -->
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Inicio</a></li>
+            <li>Parque ▼
+                <ul>
+                    <li><a href="inv.html">Investigaciones</a></li>
+                    <li><a href="dino.html">Dinosaurios</a></li>
+                    <li><a href="atracciones.html">Atracciones</a></li>
+                    <li><a href="ADN.html">ADN</a></li>
+                    <li><a href="clonacion.html">Clonación y Mutación</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="container">
+        <h1>Clonación y Mutación</h1>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcdGVPg_9tTkh8oFsBc2nnz5wWgxegG8U_0Q&s" class="lab-img">
+
+        <h2>🔬 Clonación de Dinosaurios</h2>
+        <p>
+            En Jurassic Park y Jurassic World, la clonación es el proceso mediante el cual 
+            los científicos reconstruyen organismos completos a partir del ADN rescatado de 
+            mosquitos fosilizados.  
+        </p>
+
+        <p>
+            Una vez obtenido el código genético, los embriólogos lo insertan en óvulos 
+            modificados que luego se incuban artificialmente. Este proceso permite recrear 
+            animales que han estado extintos durante millones de años.
+        </p>
+
+        <h2>🧬 Mutación Genética</h2>
+        <p>
+            Cuando el ADN fosilizado está incompleto, los científicos utilizan genes de otras 
+            especies modernas para llenar los espacios faltantes. Esto genera **mutaciones**, 
+            algunas intencionales y otras inesperadas.
+        </p>
+
+        <p>
+            Estas mutaciones pueden alterar:
+        </p>
+
+        <ul>
+            <li>El tamaño</li>
+            <li>La velocidad</li>
+            <li>La inteligencia</li>
+            <li>El comportamiento</li>
+            <li>La apariencia física</li>
+        </ul>
+
+        <p>
+            En Jurassic World, este proceso llevó a la creación de híbridos como el 
+            <b>Indominus rex</b> o el <b>Indoraptor</b>, diseñados a partir de múltiples especies para 
+            obtener características específicas como camuflaje, fuerza extrema o mayor 
+            capacidad cognitiva.
+        </p>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCVtYqrObcavVuQU2BknL5mqHWnUmKa36CCA&s" class="lab-img">
+
+        <h2>⚠️ Riesgos de la Manipulación Genética</h2>
+        <p>
+            Las mutaciones no siempre son controlables.  
+            Cambios ligeros en el ADN pueden generar efectos impredecibles que complican 
+            la seguridad del parque, alteran los ecosistemas creados y provocan comportamientos 
+            agresivos o inestables en los animales.
+        </p>
+
+        <p>
+            A pesar de los avances científicos, la manipulación genética en el mundo de 
+            Jurassic Park demuestra que jugar con la vida puede traer consecuencias 
+            inesperadas.
+        </p>
+    </div>
+
+</body>
+</html>

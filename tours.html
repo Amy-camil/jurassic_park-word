@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tours – Jurassic Project</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+    :root {
+        --rojo: #b30000;
+        --oscuro: rgba(10,10,10,0.8);
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Anton', sans-serif;
+        background: url('ChatGPT Image 5 dic 2025, 11_42_49 a.m. copy.png') no-repeat center fixed;
+        background-size: cover;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    /* MENÚ */
+    .menu {
+        background: linear-gradient(90deg,#0a0a0a,#2a2a2a);
+        padding: 14px;
+        border-bottom: 4px solid var(--rojo);
+        box-shadow: 0 4px 15px black;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+    }
+    .menu ul {list-style:none; display:flex; justify-content:center; gap:40px; margin:0; padding:0;}
+    .menu li {position:relative;}
+    .menu a {color: #f2f2f2; font-size: 22px; text-decoration:none; text-shadow:2px 2px 3px black; transition:0.3s;}
+    .menu a:hover {color: #ff0000; transform:scale(1.08);}
+    .submenu {
+        display:none;
+        position:absolute;
+        background:rgba(20,20,20,0.95);
+        border:2px solid var(--rojo);
+        padding:10px;
+        border-radius:8px;
+        top:38px;
+        min-width:170px;
+        box-shadow:0 6px 20px black;
+    }
+    .submenu a {display:block; padding:6px 0; color:#e1e1e1; font-size:18px;}
+    .submenu a:hover {color:#ff3b3b;}
+
+    .menu li:hover .submenu {display:block;}
+
+    /* TÍTULO */
+    .titulo {
+        text-align:center;
+        background: rgba(0,0,0,0.7);
+        padding: 28px;
+        font-size: 48px;
+        color: #ff1a1a;
+        border-bottom: 4px solid var(--rojo);
+        text-shadow: 4px 4px 6px black;
+        margin-bottom: 30px;
+    }
+
+    /* CONTENEDOR DE TOURS */
+    .contenedor {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        justify-content: center;
+    }
+
+    .tour {
+        width: 420px;
+        background: var(--oscuro);
+        border: 3px solid var(--rojo);
+        border-radius: 15px;
+        box-shadow: 0 0 25px black;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .tour:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px #ff0000;
+    }
+
+    .imagen-tour {
+        width: 100%;
+        height: 260px;
+        background-size: cover;
+        background-position: center;
+        transition: 0.3s;
+    }
+
+    .tour:hover .imagen-tour {
+        filter: brightness(1.15);
+    }
+
+    .info {
+        padding: 20px;
+        text-align:center;
+    }
+
+    .info h2 {
+        font-size: 32px;
+        color: #ff4c4c;
+        margin-bottom: 10px;
+        text-shadow: 3px 3px 5px black;
+    }
+
+    .info p {
+        font-size: 20px;
+        line-height: 1.3;
+        color: #e8e8e8;
+    }
+
+    /* BOTÓN VOLVER */
+    .volver {
+        text-align: center;
+        margin: 40px 0;
+    }
+    .volver a {
+        background: var(--rojo);
+        padding: 14px 30px;
+        border-radius: 12px;
+        text-decoration: none;
+        color: white;
+        font-size: 26px;
+        box-shadow: 0 0 15px black;
+        transition: 0.3s;
+    }
+    .volver a:hover {
+        background: #ff1a1a;
+        box-shadow: 0 0 25px #ff0000;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- MENÚ -->
+<div class="menu">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+
+        <li>
+            <a href="#">Parque</a>
+            <div class="submenu">
+                <a href="mapa.html">Mapa de Islas</a>
+                <a href="dino.html">Dinosaurios</a>
+                <a href="atracciones.html">Atracciones</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#">Laboratorio</a>
+            <div class="submenu">
+                <a href="ADN.html">ADN</a>
+                <a href="clonacion.html">Clonación & Mutación</a>
+                <a href="inv.html">Investigación</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#">Aventuras</a>
+            <div class="submenu">
+                <a href="tours.html">Tours</a>
+                <a href="vehiculos.html">Vehículos</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- TÍTULO -->
+<div class="titulo">🦕 Tours Oficiales del Parque · Jurassic Project 🚙</div>
+
+<!-- CONTENEDOR DE TARJETAS -->
+<div class="contenedor">
+
+    <!-- TOUR 1 -->
+    <div class="tour">
+        <div class="imagen-tour" style="background-image:url('https://i.ytimg.com/vi/lwHHuhVs2Lo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA_zkMQ1SUhEo-MOR2eevLekyiS5A');"></div>
+        <div class="info">
+            <h2>Safari Herbívoro</h2>
+            <p>Un recorrido seguro entre Brachiosaurios, Triceratops y Stegosaurus. Ideal para familias.</p>
+        </div>
+    </div>
+
+    <!-- TOUR 2 -->
+    <div class="tour">
+        <div class="imagen-tour" style="background-image:url('https://static.wikia.nocookie.net/jurassicpark/images/c/c1/Mosasaurus_Feeding_Show_Gallery_1.jpg/revision/latest?cb=20190531105109&path-prefix=es');"></div>
+        <div class="info">
+            <h2>Recorrido Acuático</h2>
+            <p>Paseo observando al colosal Mosasaurus y otras criaturas marinas prehistóricas.</p>
+        </div>
+    </div>
+
+    <!-- TOUR 3 -->
+    <div class="tour">
+        <div class="imagen-tour" style="background-image:url('https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiIyMDI1LTA5L2p3ZTMtYnRzLXNjcmVlbnNob3QtY2FtcGFpZ24tbW9tZW50LTAyXzE5MjB4MTA4MC5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjozODQwLCJmaXQiOiJjb250YWluIn19fQ==');"></div>
+        <div class="info">
+            <h2>Zona de Carnívoros</h2>
+            <p>Vive la adrenalina de recorrer áreas con Velociraptores, Carnotaurus y el legendario T-Rex.</p>
+        </div>
+    </div>
+
+    <!-- TOUR 4 -->
+    <div class="tour">
+        <div class="imagen-tour" style="background-image:url('https://flightsimulator.azureedge.net/wp-content/uploads/2025/11/Orbx-JW-Archipelago-Marketplace-1920x1080_26.jpg');"></div>
+        <div class="info">
+            <h2>Tour Aéreo</h2>
+            <p>Vuela sobre toda la isla y observa los hábitats desde arriba con seguridad total.</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- BOTÓN VOLVER -->
+<div class="volver">
+    <a href="index.html">⟵ Volver al Inicio</a>
+</div>
+
+</body>
+</html>

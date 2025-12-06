@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Atracciones - Jurassic Project</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+    body {
+        margin: 0;
+        background: url('ChatGPT Image 5 dic 2025, 11_42_49 a.m. copy.png');
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Anton', sans-serif;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    /*=============== MENÚ ===============*/
+    .menu {
+        background: linear-gradient(90deg, #0b0b0b, #2a2a2a);
+        padding: 15px;
+        border-bottom: 4px solid #b30000;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .menu ul li {
+        position: relative;
+    }
+
+    .menu a {
+        color: #f1f1f1;
+        text-decoration: none;
+        font-size: 22px;
+        text-shadow: 2px 2px 3px black;
+        transition: 0.3s;
+    }
+
+    .menu a:hover {
+        color: #ff0000;
+        transform: scale(1.1);
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        background: rgba(30, 30, 30, 0.95);
+        padding: 10px;
+        border-radius: 8px;
+        top: 35px;
+        min-width: 170px;
+        border: 2px solid #a90000;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.8);
+    }
+
+    .submenu a {
+        color: #e1e1e1;
+        display: block;
+        padding: 6px 0;
+        font-size: 18px;
+    }
+
+    .submenu a:hover {
+        color: #ff3b3b;
+        letter-spacing: 1px;
+    }
+
+    .menu ul li:hover .submenu {
+        display: block;
+    }
+
+    /*=============== TÍTULO ===============*/
+    .titulo {
+        text-align: center;
+        padding: 25px 0;
+        font-size: 50px;
+        color: #ff0000;
+        text-shadow: 4px 4px 6px black;
+        background: rgba(0,0,0,0.7);
+        border-bottom: 4px solid #b30000;
+        margin-bottom: 25px;
+    }
+
+    /*=============== ATRACCIONES ===============*/
+    .contenedor {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .atraccion {
+        width: 390px;
+        background: rgba(15, 15, 15, 0.85);
+        border: 3px solid #b30000;
+        border-radius: 15px;
+        box-shadow: 0 0 20px black;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .atraccion:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px #ff0000;
+    }
+
+    .img {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.5s;
+    }
+
+    .atraccion:hover .img {
+        transform: scale(1.2);
+    }
+
+    .info {
+        padding: 15px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .info h3 {
+        font-size: 28px;
+        color: #ff3b3b;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 3px black;
+    }
+
+    /*=============== BOTÓN VOLVER ===============*/
+    .volver {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .volver a {
+        background: #b30000;
+        padding: 12px 25px;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        transition: 0.3s;
+        box-shadow: 0 0 12px black;
+    }
+
+    .volver a:hover {
+        background: #ff1a1a;
+        box-shadow: 0 0 20px #ff0000;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!--=============== MENÚ ===============-->
+<div class="menu">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+
+        <li><a href="#">Parque</a>
+            <div class="submenu">
+                <a href="mapa.html">Mapa de Islas</a>
+                <a href="dinosaurios.html">Dinosaurios</a>
+                <a href="atracciones.html">Atracciones</a>
+            </div>
+        </li>
+
+        <li><a href="#">Laboratorio</a>
+            <div class="submenu">
+                <a href="#">ADN</a>
+                <a href="#">Investigaciones</a>
+            </div>
+        </li>
+
+        <li><a href="#">Aventuras</a>
+            <div class="submenu">
+                <a href="#">Tours</a>
+                <a href="#">Vehículos</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--=============== TÍTULO ===============-->
+<div class="titulo">🎢 Atracciones del Jurassic Project</div>
+
+<!--=============== LISTA DE ATRACCIONES ===============-->
+<div class="contenedor">
+
+    <!-- GYROSPHERE -->
+    <div class="atraccion">
+        <div class="img" style="background-image: url('https://i.pinimg.com/736x/73/27/c5/7327c597846c5ebc6f05026abf01b023.jpg');"></div>
+        <div class="info">
+            <h3>Gyrosphere Valley</h3>
+            <p>Viaje seguro entre herbívoros gigantes. Perfecto para familias.</p>
+        </div>
+    </div>
+
+    <!-- SAFARI -->
+    <div class="atraccion">
+        <div class="img" style="background-image: url('https://i.pinimg.com/736x/05/4c/97/054c9799f61b1422068ba78645e41f55.jpg');"></div>
+        <div class="info">
+            <h3>Safari Cretácico</h3>
+            <p>Explora la pradera donde habitan Triceratops, Stegosaurus y más.</p>
+        </div>
+    </div>
+
+    <!-- MOSASAURIO -->
+    <div class="atraccion">
+        <div class="img" style="background-image: url('https://i.pinimg.com/1200x/67/3a/f0/673af0ce9e940b4fe95c99cc26b66ddd.jpg');"></div>
+        <div class="info">
+            <h3>Show del Mosasaurio</h3>
+            <p>Un espectáculo acuático impresionante, único en el mundo.</p>
+        </div>
+    </div>
+
+    <!-- T-REX KINGDOM -->
+    <div class="atraccion">
+        <div class="img" style="background-image: url('https://i.pinimg.com/1200x/58/dd/52/58dd523af3c7bbd0ee875f8821b6c7f2.jpg');"></div>
+        <div class="info">
+            <h3>Reino del T-Rex</h3>
+            <p>Observa a la reina del parque durante su horario de alimentación.</p>
+        </div>
+    </div>
+
+    <!-- RAPTOR EXPERIENCE -->
+    <div class="atraccion">
+        <div class="img" style="background-image: url('https://i.pinimg.com/1200x/45/f0/28/45f028d66b1ee5f7fd492c4d2276d331.jpg');"></div>
+        <div class="info">
+            <h3>Raptor Encounter</h3>
+            <p>Conoce de cerca a los velociraptores entrenados del parque.</p>
+        </div>
+    </div>
+
+</div>
+
+<!--=============== VOLVER ===============-->
+<div class="volver">
+    <a href="index.html">⟵ Volver al Inicio</a>
+</div>
+
+</body>
+</html>

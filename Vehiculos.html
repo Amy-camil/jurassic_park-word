@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehículos – Jurassic Park & World</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0a0a0a;
+            color: white;
+        }
+
+        /* MENÚ */
+        nav {
+            background: #111;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav h1 {
+            color: #00eaff;
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 35px;
+            left: 0;
+            background: #222;
+            list-style: none;
+            padding: 0;
+            min-width: 150px;
+        }
+
+        .submenu a:hover {
+            background: #333;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* CONTENIDO */
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #00eaff;
+            font-size: 32px;
+        }
+
+        p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #cfd9df;
+        }
+
+        /* TARJETAS DE VEHÍCULOS */
+        .vehicles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #151515;
+            padding: 15px;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #00eaff55;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00eaff66;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card h3 {
+            margin-top: 15px;
+            color: #00eaff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>Jurassic Vehicles</h1>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">menú ▼</a>
+                <ul class="submenu">
+                    <li><a href="dino.html">Dinosaurios</a></li>
+                    <li><a href="atracciones.html">Atracciones</a></li>
+                    <li><a href="ADN.html">ADN</a></li>
+                    <li><a href="clonacion.html">Clonación</a></li>
+                    <li><a href="inv.html">Investigación</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Vehículos de Jurassic Park y Jurassic World</h2>
+        <p>
+            A lo largo de la historia de Jurassic Park y Jurassic World se han usado vehículos
+            icónicos para transporte, exploración y seguridad. Aquí puedes ver los más famosos.
+        </p>
+
+        <div class="vehicles">
+            <div class="card">
+                <img src="https://hackaday.com/wp-content/uploads/2018/05/jptour_feat.jpg" alt="Ford Explorer JP">
+                <h3>Ford Explorer (JP 1993)</h3>
+                <p>El clásico vehículo turístico con sistema de guía automático.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://celebritymachines.com/cdn/shop/products/JP12-v02.jpeg?v=1755087747" alt="Jeep Wrangler JP">
+                <h3>Jeep Wrangler (JP 1993)</h3>
+                <p>Usado por el personal del parque en recorridos y mantenimiento.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6yJaq0GKcybVlkI4jOZH3Plftrn60t_Oj1w&s" alt="Gyrosphere JW">
+                <h3>Gyrosphere (JW 2015)</h3>
+                <p>La moderna esfera transparente para recorridos seguros.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5DpqAANlrTYqhFVGUFaf-51_t45pjYImmJg&s" alt="Mercedes-Benz Unimog">
+                <h3>Mercedes-Benz Unimog</h3>
+                <p>Vehículo pesado utilizado para transporte y rescates.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/jurassicpark/images/a/a5/Media_pic7_large.jpg/revision/latest?cb=20150202211627" alt="Helicóptero JW">
+                <h3>Helicóptero ACU</h3>
+                <p>Helicóptero usado por la Unidad de Contención de Activos.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

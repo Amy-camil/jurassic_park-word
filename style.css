@@ -1,0 +1,90 @@
+ @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+    body {
+        margin: 0;
+        background: url('ChatGPT Image 5 dic 2025, 11_42_49 a.m. copy.png');
+        background-size: cover;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 1px;
+    }
+
+    /* CONTENEDOR DEL MENÚ */
+    .menu {
+        background: linear-gradient(90deg, #0b0b0b, #2a2a2a);
+        padding: 15px;
+        border-bottom: 4px solid #b30000;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+
+    /* LISTA PRINCIPAL */
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .menu ul li {
+        position: relative;
+    }
+
+    .menu a {
+        color: #f1f1f1;
+        text-decoration: none;
+        font-size: 22px;
+        text-shadow: 2px 2px 3px black;
+        transition: 0.3s;
+    }
+
+    /* EFECTO HOVER */
+    .menu a:hover {
+        color: #ff0000;
+        transform: scale(1.1);
+    }
+
+    /* SUBMENÚ */
+    .submenu {
+        display: none;
+        position: absolute;
+        background: rgba(30, 30, 30, 0.95);
+        padding: 10px;
+        border-radius: 8px;
+        top: 35px;
+        min-width: 170px;
+        border: 2px solid #a90000;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.8);
+        animation: abrir 0.2s ease-out;
+    }
+
+    @keyframes abrir {
+        from { opacity: 0; transform: translateY(-8px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .submenu a {
+        color: #e1e1e1;
+        display: block;
+        padding: 6px 0;
+        font-size: 18px;
+    }
+
+    .submenu a:hover {
+        color: #ff3b3b;
+        letter-spacing: 1px;
+    }
+
+    /* MOSTRAR SUBMENÚ */
+    .menu ul li:hover .submenu {
+        display: block;
+    }
+
+    /* TÍTULO */
+    h2 {
+        text-align: center;
+        color: #ff0000;
+        text-shadow: 3px 3px 5px black;
+        font-size: 40px;
+        margin: 20px 0;
+    }

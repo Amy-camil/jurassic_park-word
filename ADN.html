@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ADN – Jurassic Park & World</title>
+    <style>
+        body {
+            background-image: url("fondo.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: white;
+            backdrop-filter: blur(2px);
+        }
+
+        /* MENÚ */
+        nav {
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* SUBMENÚ */
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background: rgba(0,0,0,0.9);
+            top: 40px;
+            left: 0;
+            padding: 0;
+            border-radius: 5px;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul ul li {
+            width: 160px;
+        }
+
+        /* CONTENIDO */
+        .container {
+            max-width: 900px;
+            background: rgba(0,0,0,0.65);
+            margin: 40px auto;
+            padding: 20px 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 0px 0px 8px black;
+            font-size: 40px;
+        }
+
+        .dna-img {
+            max-width: 100%;
+            display: block;
+            margin: auto;
+            transition: transform 0.4s ease;
+            border-radius: 10px;
+        }
+
+        .dna-img:hover {
+            transform: scale(1.25);
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-shadow: 0px 0px 4px black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ -->
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Inicio</a></li>
+            <li>Parque ▼
+                <ul>
+                    <li><a href="inv.html">Investigaciones</a></li>
+                    <li><a href="dino.html">Dinosaurios</a></li>
+                    <li><a href="atracciones.html">Atracciones</a></li>
+                    <li><a href="ADN.html">ADN</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="container">
+        <h1>ADN de Dinosaurios</h1>
+
+        <img src="https://i.pinimg.com/736x/c5/f9/31/c5f931399e9ea9ff1d75ecc7610b5132.jpg" 
+        class="dna-img">
+
+        <p>
+            En Jurassic Park y Jurassic World, los dinosaurios fueron creados utilizando 
+            tecnología genética avanzada. Los científicos del parque recuperaron ADN antiguo 
+            encontrado dentro de mosquitos fosilizados en ámbar.
+        </p>
+
+        <p>
+            Cuando partes del ADN estaban incompletas, se usó material genético de otras especies 
+            modernas para reconstruir los segmentos faltantes. Este proceso permitió recrear a 
+            criaturas que habían estado extintas por más de 65 millones de años.
+        </p>
+
+        <p>
+            Aunque el objetivo era devolver a la vida especies reales, las mezclas genéticas 
+            resultaron en dinosaurios con comportamientos y características distintas a las 
+            originales, lo que llevó a desafíos y riesgos inesperados dentro del parque.
+        </p>
+    </div>
+
+</body>
+</html>

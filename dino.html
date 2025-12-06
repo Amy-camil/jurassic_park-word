@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Dinosaurios - Jurassic Project</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+    body {
+        margin: 0;
+        background: url('ChatGPT Image 5 dic 2025, 11_42_49 a.m. copy.png');
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Anton', sans-serif;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    /*================ MENÚ ================*/
+    .menu {
+        background: linear-gradient(90deg, #0b0b0b, #2a2a2a);
+        padding: 15px;
+        border-bottom: 4px solid #b30000;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .menu ul li {
+        position: relative;
+    }
+
+    .menu a {
+        color: #f1f1f1;
+        text-decoration: none;
+        font-size: 22px;
+        text-shadow: 2px 2px 3px black;
+        transition: 0.3s;
+    }
+
+    .menu a:hover {
+        color: #ff0000;
+        transform: scale(1.1);
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        background: rgba(30, 30, 30, 0.95);
+        padding: 10px;
+        border-radius: 8px;
+        top: 35px;
+        min-width: 170px;
+        border: 2px solid #a90000;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.8);
+    }
+
+    .submenu a {
+        color: #e1e1e1;
+        display: block;
+        padding: 6px 0;
+        font-size: 18px;
+    }
+
+    .submenu a:hover {
+        color: #ff3b3b;
+        letter-spacing: 1px;
+    }
+
+    .menu ul li:hover .submenu {
+        display: block;
+    }
+
+    /*================ TÍTULO ================*/
+    .titulo {
+        text-align: center;
+        padding: 25px 0;
+        font-size: 50px;
+        color: #ff0000;
+        text-shadow: 4px 4px 6px black;
+        background: rgba(0,0,0,0.7);
+        border-bottom: 4px solid #b30000;
+        margin-bottom: 20px;
+    }
+
+    /*================ GALERÍA DE DINOSAURIOS ================*/
+    .galeria {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .dino-card {
+        width: 320px;
+        background: rgba(15, 15, 15, 0.85);
+        border: 3px solid #b30000;
+        border-radius: 15px;
+        box-shadow: 0 0 20px black;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .dino-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px #ff0000;
+    }
+
+    .dino-img {
+        width: 100%;
+        height: 220px;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.5s;
+    }
+
+    .dino-card:hover .dino-img {
+        transform: scale(1.2);
+    }
+
+    .dino-info {
+        padding: 15px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .dino-info h3 {
+        font-size: 26px;
+        color: #ff3b3b;
+        margin: 0 0 10px 0;
+        text-shadow: 2px 2px 3px black;
+    }
+
+    /*================ BOTÓN VOLVER ================*/
+    .volver {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .volver a {
+        background: #b30000;
+        padding: 12px 25px;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        transition: 0.3s;
+        box-shadow: 0 0 12px black;
+    }
+
+    .volver a:hover {
+        background: #ff1a1a;
+        box-shadow: 0 0 20px #ff0000;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- MENÚ -->
+<div class="menu">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+
+        <li><a href="#">Parque</a>
+            <div class="submenu">
+                <a href="mapa.html">Mapa de Islas</a>
+                <a href="dino.html">Dinosaurios</a>
+                <a href="atracciones.html">Atracciones</a>
+            </div>
+        </li>
+
+        <li><a href="#">Laboratorio</a>
+            <div class="submenu">
+                <a href="ADN.html">ADN</a>
+                <a href="inv.html">Investigaciones</a>
+            </div>
+        </li>
+
+        <li><a href="#">Aventuras</a>
+            <div class="submenu">
+                <a href="tours.html">Tours</a>
+                <a href="Vehiculos.html">Vehículos</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- TÍTULO -->
+<div class="titulo">🦖 Dinosaurios del Jurassic Project</div>
+
+<!-- GALERÍA -->
+<div class="galeria">
+
+    <!-- T-REX -->
+    <div class="dino-card">
+        <div class="dino-img" style="background-image: url('https://i.pinimg.com/1200x/88/dd/d2/88ddd20fd69cef96817d755b83f72e6c.jpg');"></div>
+        <div class="dino-info">
+            <h3>Tyrannosaurus Rex</h3>
+            <p>Carnívoro · 12 m de altura · 40 km/h</p>
+        </div>
+    </div>
+
+    <!-- VELOCIRAPTOR -->
+    <div class="dino-card">
+        <div class="dino-img" style="background-image: url('https://i.pinimg.com/1200x/b3/6a/ad/b36aad0a0be8a65115a2c10a781f1746.jpg');"></div>
+        <div class="dino-info">
+            <h3>Velociraptor</h3>
+            <p>Carnívoro · Muy rápido · Inteligente</p>
+        </div>
+    </div>
+
+    <!-- TRICERATOPS -->
+    <div class="dino-card">
+        <div class="dino-img" style="background-image: url('https://i.pinimg.com/1200x/a4/a2/e9/a4a2e97734b60568dccbca5136fb1547.jpg');"></div>
+        <div class="dino-info">
+            <h3>Triceratops</h3>
+            <p>Herbívoro · Pacífico · 9 m de largo</p>
+        </div>
+    </div>
+
+    <!-- BRACHIOSAURUS -->
+    <div class="dino-card">
+        <div class="dino-img" style="background-image: url('https://i.pinimg.com/736x/36/5b/a0/365ba00f44fb61fedea793528ada183f.jpg');"></div>
+        <div class="dino-info">
+            <h3>Brachiosaurus</h3>
+            <p>Herbívoro · Gigante · Cuello largo</p>
+        </div>
+    </div>
+
+    <!-- STEGOSAURUS -->
+    <div class="dino-card">
+        <div class="dino-img" style="background-image: url('https://i.pinimg.com/736x/07/5a/96/075a96d62c30e7c79f8ad84c9ac8624d.jpg');"></div>
+        <div class="dino-info">
+            <h3>Stegosaurus</h3>
+            <p>Herbívoro · Placas dorsales · 7 m</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- BOTÓN VOLVER -->
+<div class="volver">
+    <a href="index.html">⟵ Volver al Inicio</a>
+</div>
+
+</body>
+</html>
